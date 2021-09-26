@@ -11,7 +11,7 @@
     <groupId>com.example</groupId>
     <artifactId>spring_boot_api_jwt_ad</artifactId>
     <version>0.0.1-SNAPSHOT</version>
-    <name>spring_boot_api_jwt_ad</name>
+    <name>spring_boot_jwt_quangnghia</name>
     <description>Demo project for Spring Boot</description>
     <properties>
         <java.version>11</java.version>
@@ -57,6 +57,7 @@
             <artifactId>nimbus-jose-jwt</artifactId>
             <version>8.8</version>
         </dependency>
+
         <dependency>
             <groupId>com.google.code.gson</groupId>
             <artifactId>gson</artifactId>
