@@ -8,7 +8,7 @@ import org.springframework.security.core.userdetails.UserDetails;
 
 import java.util.Collection;
 
-@Data
+
 @Getter
 @Setter
 public class UserPrincipal implements UserDetails {
@@ -18,18 +18,8 @@ public class UserPrincipal implements UserDetails {
     private Collection authorities;
 
     @Override
-    public Collection<? extends GrantedAuthority> getAuthorities() {
-        return authorities;
-    }
-
-    @Override
-    public String getPassword() {
-        return password;
-    }
-
-    @Override
     public String getUsername() {
-        return userName;
+        return null;
     }
 
     @Override
@@ -51,4 +41,5 @@ public class UserPrincipal implements UserDetails {
     public boolean isEnabled() {
         return false;
     }
+
 }
