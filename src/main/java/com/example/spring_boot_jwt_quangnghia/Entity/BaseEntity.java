@@ -22,6 +22,8 @@ import java.util.Objects;
 @ToString
 @RequiredArgsConstructor
 public abstract class BaseEntity implements Serializable {
+    private static final long serialVersionUID = 1L;
+
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
@@ -39,7 +41,7 @@ public abstract class BaseEntity implements Serializable {
 
     @Column(name = "create_by")
     @CreatedBy
-    private String createdBy;
+    private Long createdBy;
 
     @Column(name = "modified_by")
     @LastModifiedBy

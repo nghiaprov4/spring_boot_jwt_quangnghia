@@ -44,7 +44,7 @@ public class JwtUtil {
 
     }
 
-    private Date generateExpirationDate() {
+    public Date generateExpirationDate() {
         return new Date(System.currentTimeMillis() + 864000000);
     }
 }
